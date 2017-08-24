@@ -12,11 +12,10 @@ function mostrarNoticia(noticia){
 }
 
 function contienePalabra(noticia, palabra) {
-  texto = noticia.innerText;
+  texto = noticia.innerText.toLowerCase();
   if (texto.indexOf(palabra) >= 0){
     return true;
   }
-
 }
 
 function recortarTexto(noticia, cantidadPalabras){
